@@ -1,3 +1,9 @@
+/* Base styles */
+body {
+    font-family: 'EB Garamond', serif;
+    background-color: #f5f0f0;
+}
+
 /* Animation */
 @keyframes fadeIn {
     0% { opacity: 0; }
@@ -8,4 +14,11 @@
     animation: fadeIn 2s ease-in;
 }
 
-/* Any additional custom styles can go here */
+/* Custom hover effects */
+.nav-link {
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #4B5563;
+}
