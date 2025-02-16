@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jahnavi - Personal Website</title>
-    <!-- Tailwind CSS via CDN -->
+    
+    <!-- External Resources -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles/main.css">
+    
     <!-- Tailwind Config -->
     <script>
         tailwind.config = {
@@ -22,8 +21,11 @@
             }
         }
     </script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/main.css">
 </head>
-<body class="min-h-screen font-garamond bg-[#f5f0f0] text-gray-800">
+<body class="min-h-screen bg-[#f5f0f0] text-gray-800">
     <main class="container mx-auto px-4 py-12 md:py-24 max-w-2xl">
         <section class="fade-in space-y-12">
             <!-- Introduction -->
@@ -36,9 +38,9 @@
             <div class="space-y-4">
                 <h2 class="text-xl">work</h2>
                 <ul class="space-y-2 pl-8 border-l border-gray-300">
-                    <li class="hover:text-gray-600 cursor-pointer">projects</li>
-                    <li class="hover:text-gray-600 cursor-pointer">experiments</li>
-                    <li class="hover:text-gray-600 cursor-pointer">playground</li>
+                    <li class="nav-link cursor-pointer">projects</li>
+                    <li class="nav-link cursor-pointer">experiments</li>
+                    <li class="nav-link cursor-pointer">playground</li>
                 </ul>
             </div>
 
@@ -46,13 +48,15 @@
             <div class="space-y-4">
                 <h2 class="text-xl">words</h2>
                 <ul class="space-y-2 pl-8 border-l border-gray-300">
-                    <li class="hover:text-gray-600 cursor-pointer">thoughts on design</li>
-                    <li class="hover:text-gray-600 cursor-pointer">reflections</li>
-                    <li class="hover:text-gray-600 cursor-pointer">creative process</li>
+                    <li class="nav-link cursor-pointer">thoughts on design</li>
+                    <li class="nav-link cursor-pointer">reflections</li>
+                    <li class="nav-link cursor-pointer">creative process</li>
                 </ul>
             </div>
         </section>
     </main>
+    
+    <!-- Scripts -->
     <script src="scripts/main.js"></script>
 </body>
 </html>
