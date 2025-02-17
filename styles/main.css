@@ -17,7 +17,6 @@ body {
 /* Project hover effects */
 .project-container {
     position: relative;
-    /* This ensures the container doesn't affect layout */
     display: inline-block;
 }
 
@@ -27,13 +26,12 @@ body {
     top: 50%;
     transform: translateY(-50%);
     opacity: 0;
-    visibility: hidden; /* Hide by default */
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
     pointer-events: none;
     z-index: 10;
 }
 
-/* Only show images when hovering over the specific link */
 .project-link:hover + .project-images {
     opacity: 1;
     visibility: visible;
